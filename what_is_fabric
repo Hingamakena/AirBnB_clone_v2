@@ -1,0 +1,24 @@
+python library for interacting with SSH and computer systems easily to automate deployment and administration
+
+fab scripts are run with fab tool, which is imported
+
+contained in a file known as fabfile
+
+key areas:
+	- Building a server
+	- Maintaining the server
+	- Monitoring
+
+Installing Fabric:
+	-sudo aptitude install fabric
+	or
+	pip install fabric
+
+Fabric commands:
+	-run
+	-local
+	-put
+	-sudo
+	-get
+	-propmt
+	-reboot
