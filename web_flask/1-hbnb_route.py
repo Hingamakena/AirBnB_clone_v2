@@ -5,7 +5,10 @@ from flask import Flask
 """ declare namespaec of app """
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", strict_slashes=False)
 """ route to the  root folder """
 def main():
     return "Hello HBNB"
+
+if __name__ == "__main__":
+    app.run(port=5000)
