@@ -5,17 +5,18 @@
     initialize app with the flask Namespace """
 app = Flask(__name__)
 
-""" display "Hello HBNB" """
+
 @app.route("/")
 def main():
+    """ route to display Hello HBNB """
     return "Hello HBNB"
 
-""" display "hbnb" in capital letters """
 @app.route("/hbnb")
 def hbnb():
+    """ display HBNB at the output """
     return "HBNb"
 
-""" Route C followed by the value of the text variable """
 @app.route("/c/<text>")
 def c():
+    """ display C followed by the value of the text """
     return f"{text}"
