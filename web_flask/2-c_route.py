@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-""" from flask import Flask for namespace
-    
-    initialize app with the flask Namespace """
+""" from flask import Flask for namespace """
+from flask import Flask
+
 app = Flask(__name__)
 
 
